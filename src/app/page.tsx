@@ -72,7 +72,7 @@ export default function Home() {
           <motion.p
             variants={fadeInUp}
           >
-            Explore the world's most amazing destinations
+           Explore the world&apos;s most amazing destinations
           </motion.p>
           <motion.div 
             className="search-box"
@@ -263,10 +263,10 @@ export default function Home() {
             <div className="expert-tabs">
               <button className="tab-button active">How does it work?</button>
               <button className="tab-button">Meet our experts</button>
-              <button className="tab-button">What's included?</button>
+              <button className="tab-button">What&apos;s included?</button>
             </div>
             <p className="expert-details">
-              Make a trip request, connect with a local expert, and sit back while our experts craft a custom itinerary based on expertise, exclusivity, and ease. It's a trip you couldn't plan yourself, all with 24/7 on-the-ground support.
+              Make a trip request, connect with a local expert, and sit back while our experts craft a custom itinerary based on expertise, exclusivity, and ease. It&apos;s a trip you couldn&apos;t plan yourself, all with 24/7 on-the-ground support.
             </p>
             <motion.button 
               className="explore-expert-btn"
