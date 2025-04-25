@@ -1,0 +1,108 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    mix-blend-mode: difference;
+  }
+  
+  .logo {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'Clash Display', sans-serif;
+    z-index: 1001;
+  }
+  
+  .menu-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    z-index: 1001;
+    padding: 0;
+  }
+  
+  .menu-button span {
+    font-family: 'Clash Display', sans-serif;
+    text-transform: lowercase;
+  }
+  
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px;
+  }
+  
+  .hamburger span {
+    display: block;
+    width: 24px;
+    height: 1px;
+    background-color: white;
+    transition: 0.3s;
+  }
+  
+  .menu-button.open .hamburger span:first-child {
+    transform: rotate(45deg) translate(4px, 4px);
+  }
+  
+  .menu-button.open .hamburger span:last-child {
+    transform: rotate(-45deg) translate(4px, -4px);
+  }
+  
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #1a1a1a;
+    z-index: 1000;
+  }
+  
+  .menu-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  .menu-links {
+    text-align: center;
+  }
+  
+  .menu-links a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 4vw;
+    line-height: 1.6;
+    font-family: 'Clash Display', sans-serif;
+    transition: color 0.3s;
+  }
+  
+  .menu-links a:hover {
+    color: #888;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 20px;
+    }
+  
+    .menu-links a {
+      font-size: 8vw;
+    }
+  }

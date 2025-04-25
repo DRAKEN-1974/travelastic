@@ -1,0 +1,167 @@
+.packages-section {
+    min-height: 100vh;
+    background-color: #111111;
+    padding: 100px 0;
+    color: white;
+  }
+  
+  .packages-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .packages-header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .packages-header h2 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  
+  .packages-header p {
+    color: #888;
+    font-size: 1.1rem;
+  }
+  
+  .packages-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .package-card {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .package-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .package-image {
+    position: relative;
+    height: 250px;
+  }
+  
+  .package-type {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    backdrop-filter: blur(10px);
+  }
+  
+  .package-content {
+    padding: 2rem;
+  }
+  
+  .package-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+  
+  .package-meta {
+    display: flex;
+    gap: 1.5rem;
+    color: #888;
+    margin-bottom: 1.5rem;
+  }
+  
+  .duration, .rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .features-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+  
+  .features-list li {
+    color: #888;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .features-list li::before {
+    content: "•";
+    color: #4CAF50;
+  }
+  
+  .package-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1.5rem;
+  }
+  
+  .price {
+    display: flex;
+    align-items: baseline;
+    gap: 0.2rem;
+  }
+  
+  .currency {
+    font-size: 1.2rem;
+    color: #888;
+  }
+  
+  .amount {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  
+  .book-button {
+    background: white;
+    color: #111111;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 100px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .book-button:hover {
+    background: #f0f0f0;
+  }
+  
+  @media (max-width: 1200px) {
+    .packages-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .packages-section {
+      padding: 60px 0;
+    }
+  
+    .packages-header h2 {
+      font-size: 2.5rem;
+    }
+  
+    .packages-grid {
+      grid-template-columns: 1fr;
+    }
+  }
